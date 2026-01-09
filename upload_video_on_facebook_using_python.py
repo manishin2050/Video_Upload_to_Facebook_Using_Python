@@ -10,6 +10,7 @@ video_caption = "Best_Video_Ever" # replace with your caption
 
 # Graph API for make request to connect facebook
 url = f"https://graph-video.facebook.com/v21.0/{page_id}/videos"
+# url = f"https://graph-video.facebook.com/v21.0/{page_id}/ # issue is have in this live you can fix error #1 using adjustment in this line 
 
 # data upload to facebook
 data = {
@@ -39,5 +40,6 @@ try:
         print("Error:", response_json)
 except Exception as e:
     print(f"error aaya hai kyuki : {e}")
+
 
 # code ends here
